@@ -1,5 +1,44 @@
 extends layout
 
 block content
-  h1 Hello world
-  
+    nav.navbar.navbar-inverse(data-spy="affix", data-offset-top="197")
+        .container-fluid
+            .navbar-header
+                //button(type="button", data-toggle="collapse",data-target="#myNavbar")
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="#") Sujil Maharjan
+            div 
+                .collapse.navbar-collapse#myNavbar
+                    ul.nav.navbar-nav
+                        li 
+                            a(href="#section1") Home
+                        li
+                            a(href="#section2") Career Interest
+                        li
+                            a(href="#section3") Contact Me!      
+
+     
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+        //li(data-target='#myCarousel', data-slide-to='3')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='http://www.ramapo.edu/honors/files/2014/07/DSC0034.jpg', alt='Chania')
+        .item
+          img(src='http://1.bp.blogspot.com/-lSo2KhkG4tM/U4Dau-NvpeI/AAAAAAAAARE/SzAyY_L7l5Q/s1600/Adrian-730077.jpg', alt='Chania')
+        .item
+          img(src='/images/image3.jpg', alt='Flower')
+      // Left and right controls
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
