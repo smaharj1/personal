@@ -14,20 +14,20 @@ nav{
   height: 100%;
 }
 
-body {
-    background-color: #f9df8d;
-}
-  
 .navbar-custom {
-    background-color: #ee9c21 !important;
+    background-color: #0b99bc !important;
 }
 
 .navbar-custom .navbar-nav > li > a, .navbar-custom .navbar-brand {
-    color:#a34e24;
+    color:white;
 }
 
 .navbar-custom .navbar-nav > li > a:hover {
-    color: #ee9c21;
-    background-color:#796e24;
+    color: #3c3c3c;
+    background-color: #0b99bc;
+
 }
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
