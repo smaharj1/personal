@@ -1,7 +1,30 @@
 extends layout
 
 block content
-    nav.navbar.navbar-inverse(data-spy="affix", data-offset-top="197")
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+        //li(data-target='#myCarousel', data-slide-to='3')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='./images/image1.png', alt='Chania')
+        .item
+          img(src='./images/image2.jpg', alt='Chania')
+        .item
+          img(src='/images/image3.jpg', alt='Flower')
+      // Left and right controls
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+    
+    nav.navbar.navbar-custom(data-spy="affix", data-offset-top="197")
         .container-fluid
             .navbar-header
                 //button(type="button", data-toggle="collapse",data-target="#myNavbar")
@@ -20,25 +43,4 @@ block content
                             a(href="#section3") Contact Me!      
 
      
-    #myCarousel.carousel.slide(data-ride='carousel')
-      // Indicators
-      ol.carousel-indicators
-        li.active(data-target='#myCarousel', data-slide-to='0')
-        li(data-target='#myCarousel', data-slide-to='1')
-        li(data-target='#myCarousel', data-slide-to='2')
-        //li(data-target='#myCarousel', data-slide-to='3')
-      // Wrapper for slides
-      .carousel-inner(role='listbox')
-        .item.active
-          img(src='./images/image1.jpg', alt='Chania')
-        .item
-          img(src='./images/image3.jpg', alt='Chania')
-        .item
-          img(src='/images/image3.jpg', alt='Flower')
-      // Left and right controls
-      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-        span.sr-only Previous
-      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-        span.sr-only Next
+    
