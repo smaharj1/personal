@@ -25,26 +25,48 @@ block content
                 span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
                 span.sr-only Next
         
-    
-    .jarallax.navigation-menu
-        ul
-            li.active
-                a(href="#") Home
-            li
-                a(href="#portfolio") Portfolio
-            li
-                a(href="#contact") Contact Me?
+    #nav.navbar.navbar-custom
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#collapsedMenu",aria-expanded="false") 
+                    span.glyphicon.glyphicon-list
+                    span.sr-only Toggle Navigation
+                    span.icon-bar
+                    span.icon-bar
+                    
+                a.navbar-brand(href="#") Sujil Maharjan
+            .collapse.navbar-collapse#collapsedMenu
+                ul.nav.navbar-nav
+                    li 
+                        a.active(href="#intro") Introduction
+                            span.sr-only 
+                    li 
+                        a(href="#interest") Interests
+                    li 
+                        a(href="#contact") Contact Me?
+                
                         
         
     .jarallax#intro
+        .contentBlock
+            .content
+                h1 Sujil Maharjan says hello!
+                h3 I am a software developer who is interested in forming a career out of software and web development
     
     .jarallax#portfolio
     
     .jarallax#contact
+    
+    .gap
 
     script(type='text/javascript').
         $('.jarallax').jarallax({
             speed: 0.5,
             imgWidth: 1366,
             imgHeight: 768
+        })
+        $('#nav').affix({
+          offset: {
+            top: $('#mainpage').height()-$('#nav').height()
+          }
         })
