@@ -1,7 +1,8 @@
 @navbarColor:#0b99bc;
-@navbarTextColor: #f6f6f6;
+@navbarTextColor: #f4f4f4;
 @navbarHoverColor: #3c3c3c;
 @footerColor: #3c3c3c;
+@tintPink: #D40E52;
 
 /* Declare heights because of positioning of img element */
 
@@ -46,8 +47,20 @@
     padding: 0px;
 }
 
+// This is for bringing the text in carousel caption in the middle
+.carousel-caption {
+    top:50%;
+    transform: translateY(-50%);
+}
+.carousel-caption p {
+    font-size: large;
+}
+
+.carousel-caption p , .carousel-caption h1 {
+    color: @tintPink;
+}
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .affix {

@@ -13,10 +13,22 @@ block content
             .carousel-inner(role='listbox')
                 .item.active
                     img(src='./images/sliderImages/image1.jpg', alt='Chania')
+                    .carousel-caption
+                        h1 Web Development through Bootstrap workshop
+                        p.
+                            Conducted a workshop as Microsoft Student Partner on Fundamentals of Web Development (HTML/CSS) and power of Bootstrap
                 .item
                     img(src='./images/sliderImages/image2.jpg', alt='Chania')
+                    .carousel-caption
+                        h1 Poster Presentation at NRHC Conference
+                        p.
+                            Presented Zhang's paper in North Regional Honors Conference about the Prime Gap
                 .item
                     img(src='/images/sliderImages/image3.jpg', alt='Flower')
+                    .carousel-caption
+                        h1 AndroidWear workshop 
+                        p.
+                            Attended the AndroidWear Workshop conducted by Google Developers Group North Jersey
             // Left and right controls
             a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
                 span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -36,26 +48,36 @@ block content
                     
                 a.navbar-brand(href="#") Sujil Maharjan
             .collapse.navbar-collapse#collapsedMenu
-                ul.nav.navbar-nav
+                ul.nav.navbar-nav.navigate-menu
                     li 
-                        a.active(href="#intro") Introduction
+                        a.hvr-sweep-to-bottom.active(href="#intro") Introduction
                             span.sr-only 
                     li 
-                        a(href="#interest") Interests
-                    li 
-                        a(href="#contact") Contact Me?
+                        a.hvr-sweep-to-bottom(href="#portfolio") Portfolio
+
                 
                         
         
     .jarallax#intro
         .contentBlock
             .content
-                h1 Sujil Maharjan says hello!
-                h3 I am a software developer who is interested in forming a career out of software and web development
-    
+                h1 Sujil Maharjan
+                p.
+                    I am a junior Computer Science student at Ramapo College of New Jersey with a zeal for software and web development. Having said that, nothing excites me more than coding for countless hours and sketching algorithms on the board with occasional coffee breaks. I am driven towards creativity and innovation. It has led me from innovating apps at various hackathons to founding clubs on campus to help cultivate new ideas. 
+
+                    My passion for learning adventures motivates me to move outside the box when it comes to problem-solving and innovation. Besides computers, I also like to hike and have unique adventures that can make me curious.
+                
+                #buttonBarForIntro
+                    .col-md-6.col-sm-12
+                        a.btn.hvr-sweep-to-bottom#hire(type="button") HIRE ME!
+                    .col-md-6.col-sm-12
+                        a.btn.hvr-sweep-to-bottom#details(type="button")
+                            span DETAIL &nbsp &nbsp
+                            span.glyphicon.glyphicon-chevron-down
+                
     .jarallax#portfolio
-    
-    .jarallax#contact
+        .contentBlock
+            .content
     
     .gap
         .col-md-3.col-xs-12
