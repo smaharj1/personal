@@ -2,6 +2,7 @@
 @navbarTextColor: #f6f6f6;
 @navbarHoverColor: #3c3c3c;
 @footerColor: #3c3c3c;
+@headingColor: #FCDF15;
 
 .jarallax {
     position: relative;
@@ -51,13 +52,22 @@ a:hover, a:focus {
     .widthArrangement();
     text-align: center;
 }
-.content p {
-    text-align: left;
-    font-size: large;
-    
-    .widthArrangement();
+.content {
 
+    p {
+        text-align: left;
+        font-size: large;
+
+        .widthArrangement();
+
+    }
+    
+    h1 {
+        color: @headingColor;
+    }
 }
+
+
 
 /* navigate menu */
 .navigate-menu ul {
@@ -91,6 +101,9 @@ a:hover, a:focus {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    
+   
+
 }
 
 .basicPadding() {
