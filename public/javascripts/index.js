@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
     
     $('.row').on('click', function () {
-        var info = $(this).children('.info');
+        var info = $(this).next().children('.info');
         if (info.data('isHidden') == 'true') {
             info.slideDown();
             info.data('isHidden','false');

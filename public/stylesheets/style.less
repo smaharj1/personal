@@ -1,4 +1,5 @@
-
+@portfolioBackground: rgba(212,14,82,0.3);
+@infoBG: rgba(252,223,21,0.3);
 
 #intro {
     background: url('/images/image1.png');
@@ -7,7 +8,7 @@
 
 #portfolio {
     background: url('/images/image2.jpg');
-    background-color: rgba(212,14,82,0.3) !important;
+    background-color: @portfolioBackground !important;
 }
 
 
@@ -66,4 +67,10 @@ hr {
     width: auto;
 }
 
+.info {
+    background-color: lighten(@infoBG, 20%);
+}
 
+.topics:hover {
+    cursor:pointer;
+}
