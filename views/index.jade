@@ -15,20 +15,20 @@ block content
                     img(src='./images/sliderImages/image1.jpg', alt='Chania')
                     .carousel-caption
                         h1 Web Development through Bootstrap workshop
-                        p.
+                        p.hidden-sm.hidden-xs
                             Conducted a workshop as Microsoft Student Partner on Fundamentals of Web Development (HTML/CSS) and power of Bootstrap
                         img(src="./images/sliderImages/MS_logo.png")
                 .item
                     img(src='./images/sliderImages/image2.jpg', alt='Chania')
                     .carousel-caption
                         h1 Poster Presentation at NRHC Conference
-                        p.
+                        p.hidden-sm.hidden-xs
                             Presented Zhang's paper in North Regional Honors Conference about the Prime Gap
                 .item
                     img(src='/images/sliderImages/image3.jpg', alt='Flower')
                     .carousel-caption
                         h1 AndroidWear workshop 
-                        p.
+                        p.hidden-sm.hidden-xs
                             Attended the AndroidWear Workshop conducted by Google Developers Group North Jersey
             // Left and right controls
             a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
@@ -47,14 +47,14 @@ block content
                     span.icon-bar
                     span.icon-bar
                     
-                a.navbar-brand(href="#") Sujil Maharjan
+                a.navbar-brand(data-id="#mainpage") Sujil Maharjan
             .collapse.navbar-collapse#collapsedMenu
                 ul.nav.navbar-nav.navigate-menu
                     li 
-                        a.hvr-sweep-to-bottom.active(href="#intro") Introduction
+                        a.hvr-sweep-to-bottom.active(data-id="#intro") Introduction
                             span.sr-only 
                     li 
-                        a.hvr-sweep-to-bottom(href="#portfolio") Portfolio
+                        a.hvr-sweep-to-bottom(data-id="#portfolio") Portfolio
 
                 
                         
@@ -209,3 +209,4 @@ block content
             top: $('#mainpage').height()-$('#nav').height()
           }
         })
+        

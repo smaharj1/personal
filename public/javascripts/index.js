@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#details').on('click',function () {
         window.open('#portfolio','_self');
     });
-    
+        
     $('.row').on('click', function () {
         var info = $(this).next().children('.info');
         if (info.data('isHidden') == 'true') {
@@ -21,9 +21,18 @@ $(document).ready(function () {
         }
     })
     
+    $('#nav a').on('click', function () {
+            var id = $(this).data('id');
+            $('html, body').animate({
+                        scrollTop: $(""+id).offset().top
+            }, 700);
+        })
+    
     var rows = $('.row').children('.info').each(function () {
         $(this).hide();
         $(this).data('isHidden','true');
     });
+    
+    
    
 });
