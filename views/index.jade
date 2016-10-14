@@ -58,7 +58,7 @@ block content
             .content
                 h1 Sujil Maharjan
                 hr
-                p.
+                p.centerWidth.
                     I am a senior Computer Science student at Ramapo College of New Jersey with a zeal for software and web development. Having said that, nothing excites me more than coding for countless hours and sketching algorithms on the board with occasional coffee breaks. I am driven towards creativity and innovation. It has led me from innovating apps at various hackathons to founding clubs on campus to help cultivate new ideas. 
 
                     My passion for learning adventures motivates me to move outside the box when it comes to problem-solving and innovation. Besides computers, I also like to hike and have unique adventures that can make me curious.
@@ -74,58 +74,77 @@ block content
     .jarallax#portfolio
         .contentBlock
             .content
-                h1 My Experiences
-                hr
-                #experiences
-                    .row.topics 
-                        .col-md-8.col-sm-12
-                            p.resumeHead                        
-                                span.glyphicon.glyphicon-plus  
-                                a &nbsp Microsoft Student Partner, Microsoft
-                        .col-md-3.hidden-sm.hidden-xs
-                            p.resumeDate Jan 2016 - Current
-                        .col-md-offset-1
-                    
-                    .row
-                        .col-md-12.info
-                            p 
-                                span.glyphicon.glyphicon-star-empty
-                                | Informing the campus population about the free platforms provided by Microsoft for the students
-                            p
-                                span.glyphicon.glyphicon-star-empty
-                                | Conducting workshops on various technical skills such as Web Development, Spark Cores, Project Oxford, etc. to grow and nurture a community of students
-                                
+                #experience
+                    h1.header-color I also have a bit of experience
+                    p.small-font The rows are clickable.
 
-                    .row.topics 
-                        .col-md-8.col-sm-12
-                            p.resumeHead                        
-                                span.glyphicon.glyphicon-plus  
-                                a &nbsp Research Intern/Assistant, Ramapo College
-                        .col-md-3.hidden-sm.hidden-xs
-                            p.resumeDate Jan 2015 - Jan 2016
-                        .col-md-offset-2
+                    // Table containing all the relevant experiences
+                    table.table.table-hover
+                        thead.header-color
+                            th(style="width: 20%") Company
+                            th(style="width: 60%") My role
+                            th(style="width: 20%") Timeline
+                        tbody.table-hover
+                            tr
+                                td 
+                                    | GE Healthcare
+                                    .logo-display 
+                                        img(src='./images/GE-logo.png')
+                                td 
+                                    | Software Development Leadership Program Intern
+                                    .display-option.description 
+                                        ol
+                                            li Collaborated with software developers from global teams to implement automated test cases in Agile environment
+                                            li Developed integration test framework for waveform verification using Java and AngularJS
+                                            li Researched and developed a waveform color comparison algorithm that uses Hue, Saturation, and Brightness for dynamic performance
+                                            li Performed Computerized System Validation (CSV) on a tool that injected waveform into the solution
+                                            li Developed several APIs and enhanced existing ones to make it more RESTful by using Java and Springboot
+                                td June 2016 - Present
+                            tr
+                                td 
+                                    | Microsoft
+                                    .logo-display
+                                        img(src='./images/MS-logo.png')
+                                td 
+                                    | Microsoft Student Partner
+                                    .display-option.description
+                                        ol
+                                            li Hosted bi-weekly workshops on technologies such as Azure Machine Learning, Web Development and Internet of Things with attendance of more than 10 students
+                                            li Grew a strong technological community of more than 50 students and represented Microsoft on campus
+                                td Jan 2016 - May 2016
+                            tr
+                                td 
+                                    | Barneys New York
+                                    .logo-display
+                                        img(src='./images/BNY-logo.png')
+                                td 
+                                    | MIS Intern
+                                    .display-option.description
+                                        ol
+                                            li Supported end user requests for information access to various software and frameworks on a daily basis
+                                            li Assisted the employees to configure and troubleshoot any issues related with computer system
+                                td Jan 2016 - May 2016
+                            tr
+                                td 
+                                    | Ramapo College
+                                    .logo-display 
+                                        img(src='./images/RCNJ-logo.png')
+                                td 
+                                    | Research Assistant for Problets Project (NSF)
+                                    .display-option.description
+                                        ol
+                                            li Created a tool to track and analyze the user’s errors in the software, modeling an effective feedback solution for Parsons puzzles software through the error analysis
+                                            li Developed a User Interface to integrate Parsons puzzles and improve ease of access using Java platform
+                                td Jan 2015 - Jan 2016
+
+                    p.medium-font 
+                        | If you would like to look at my projects, please go to my GitHub profile by clicking 
+                        a(href='http://www.github.com/smaharj1', target="_blank") HERE
+    
                     
-                    .row
-                        .info.col-md-12
-                            p
-                                span.glyphicon.glyphicon-star-empty
-                                |Creating a tool to track and analyze the client’s errors in the software
-                            p 
-                                span.glyphicon.glyphicon-star-empty
-                                |Modeling an effective feedback solution for Parsons puzzles software through the error analysis
-                            p
-                                span.glyphicon.glyphicon-star-empty
-                                |Developing a User Interface to integrate Parsons puzzles and improve ease of access using Java platform
-                                
-                    .row.topics 
-                        .col-md-8.col-sm-12
-                            p.resumeHead                        
-                                span.glyphicon.glyphicon-plus  
-                                a &nbsp MIS Intern, Barneys New York
-                        .col-md-3.hidden-sm.hidden-xs
-                            p.resumeDate Jan 2016 - Current
-                        .col-md-offset-2
-                
+    .jarallax
+        .contentBlock
+            .content
                 h1 Related Skills
                 hr
                 #skills
