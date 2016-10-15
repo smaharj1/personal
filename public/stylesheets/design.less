@@ -1,66 +1,24 @@
-@design-color-soft:#EDEDED;
-@design-color-dark: #441d0d;
-@design-color-main: #BEDB89;
-@design-color-sub-main: #E3EECC;
-@design-color-white: #d9d3b4;
-@cornsilk-white: #ECF3E3;
+@experienceColor:#0b99bc;
 
 .genericBlockPadding() {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-body,blockquote {
-    background-color: @cornsilk-white;
-    color: @design-color-dark;
-}
-
-
-#travel {
-    height: auto;   
-    overflow: auto;
-    .genericBlockPadding();
-    background-color: darken(@cornsilk-white,10%) !important;
-}
-
-#introBlock {
-    height:auto;
-    overflow: auto;
-    .genericBlockPadding();
-    background-color: darken(@design-color-main,5%) !important;
-}
-
 .footer-space {
     height:auto;
     overflow: auto;
 
-    background: @design-color-dark;
-}
-
-#skillsBlock {
-    height:auto;
-    overflow: auto;
-    .genericBlockPadding();
-    background: @design-color-sub-main;
-}
-
-#extracurricularBlock {
-    height:auto;
-    overflow: auto;
-    .genericBlockPadding();
-    background: @design-color-soft;
 }
 
 .col-head {
-    background-color: @design-color-main;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-left: 10px;
+    background-color: @experienceColor;
 }
-
 .col-body {
-    background-color: @design-color-sub-main;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .little-left-width {

@@ -48,14 +48,15 @@ block content
                         a.hvr-sweep-to-bottom.active(data-id="#intro") Introduction
                             span.sr-only 
                     li 
-                        a.hvr-sweep-to-bottom(data-id="#portfolio") Portfolio
+                        a.hvr-sweep-to-bottom(data-id="#experience") Portfolio
+                    li 
+                        a.hvr-sweep-to-bottom(data-id="#skills") Skills
+                    li 
+                        a.hvr-sweep-to-bottom(data-id="#extracurricular") Leadership
 
-                
-                        
-        
-    .jarallax#intro
+    .jarallax.background1
         .contentBlock
-            .content
+            .content#intro
                 h1 Sujil Maharjan
                 hr
                 p.centerWidth.
@@ -67,11 +68,11 @@ block content
                     .col-md-6.col-sm-12
                         a.btn.hvr-sweep-to-bottom#hire(type="button") HIRE ME!
                     .col-md-6.col-sm-12
-                        a.btn.hvr-sweep-to-bottom#details(type="button")
+                        a.btn.hvr-sweep-to-bottom#details(type="button", data-id="#skills")
                             span DETAIL &nbsp &nbsp
                             span.glyphicon.glyphicon-chevron-down
-                
-    .jarallax#portfolio
+                    
+    .jarallax.background2
         .contentBlock
             .content
                 #experience
@@ -140,76 +141,149 @@ block content
                     p.medium-font 
                         | If you would like to look at my projects, please go to my GitHub profile by clicking 
                         a(href='http://www.github.com/smaharj1', target="_blank") HERE
-    
-                    
-    .jarallax
+        
+    .jarallax.background1
         .contentBlock
             .content
-                h1 Related Skills
-                hr
                 #skills
-                    .row
-                        .col-md-2.col-sm-6.col-xs-6
-                            p.resumeHead C++
-                        .col-md-offset-2
-                        .col-md-2.col-sm-6.col-xs-6
-                            p.resumeHead Java
-                        .col-md-offset-2
-                        .col-md-2.col-sm-6.col-xs-6
-                            p.resumeHead C
-                        .col-md-offset-2
-                        .col-md-2.col-sm-6.col-xs-6
-                            p.resumeHead HTML/CSS
-                        .col-md-offset-2
-                        .col-md-2.col-sm-6.col-xs-6
-                            p.resumeHead Javascript
-                        .col-md-offset-2
-                        .col-md-2.col-sm-6.col-xs-6
-                            p.resumeHead PHP
-                        .col-md-offset-2
-                        
-                h1 Projects
-                hr
-                #projects
-                    .row 
-                        .col-md-8.col-sm-12
-                            p.resumeHead                      
-                                span.glyphicon.glyphicon-plus  
-                                a(href="https://github.com/smaharj1/Ishido" target="_blank") &nbsp Ishido Project, the way of the stones
-                        .col-md-3.hidden-sm.hidden-xs
-                            p.resumeDate Jan 2016 - Current
-                        .col-md-offset-2
-                    .row 
-                        .col-md-8.col-sm-12
-                            p.resumeHead                  
-                                span.glyphicon.glyphicon-plus  
-                                a(href="https://github.com/smaharj1/Contact-Management" target="_blank") &nbsp Contact Management Project
-                        .col-md-3.hidden-sm.hidden-xs
-                            p.resumeDate Oct 2015 - Dec 2015
-                        .col-md-offset-2
+                    h1.header-color I also have skills in few languages and technologies
+                    p.small-font (Hover over to find out my skill level)
+                    p.small-font Index: Green = High, Orange = Medium, Blue = Have encountered with it at some point
+                    ol
+                        li
+                            span.high Java 
+                        li
+                            span.high C++
+                        li
+                            span.medium C
+                        li
+                            span.high HTML/CSS
+                        li
+                            span.high Javascript
+                        li
+                            span.medium AngularJS
+                        li
+                            span.high MySQl
+                        li
+                            span.high MongoDB
+                        li
+                            span.high Visual Studio
+                        li
+                            span.high Eclipse
+                        li
+                            span.high IntelliJ
+                        li
+                            span.high JBehave
+                        li
+                            span.medium ImageMagick
+                        li
+                            span.medium Serenity
+                        li
+                            span.high Nepali
+                        li
+                            span.high English
+                        li
+                            span.high Hindi
+                        li
+                            span.high Newari
+
+    .jarallax.background2
+        .contentBlock
+            .content
+                #extracurricular
+                    h1 I also handle other leadership roles
+                    p.small-font Please click my roles to see how I feel about my roles
+                    // Table containing all the relevant experiences
+                    table.table
+                        thead
+                            th(style='width: 33%')
+                            th(style='width: 33%')
+                            th(style='width: 33%')
+                        tbody
+                            tr
+                                td
+                                    .col-head 
+                                        | //hackRamapo
+                                    .display-option.col-body
+                                        .italic Co-founder | Aug 2015 - Jan 2016
+                                        p.description 
+                                            | I had a great time forming this club from ground-up with few friends. The club is dedicated to 
+                                            | foster innovation and creativity in technology on campus. I held  tech workshops such as web
+                                            | development, IoT development, Machine Learning sessions, and entrepreneurship sessions to more than
+                                            | 10 students per each workshop. I also managed club's budget
+                                td
+                                td 
+                                    .col-head 
+                                        | Google Club
+                                    .display-option.col-body
+                                        .italic Vice President | Sept 2015 - Jan 2016
+                                        p.description
+                                            | I joined Google club since its beginning as a Vice-President. We held different events such as 
+                                            | recruitment by Google, profile building in LinkedIn.
+                            
+                            tr
+                                td 
+                                td 
+                                    .col-head 
+                                        | International Student Organization
+                                    .display-option.col-body
+                                        .italic Student Advisor | Aug 2014 - Mar 2016
+                                        p.description
+                                            | I was a Secretary of ISO during my sophomore year. I introduced monthly ethnic cuisine and info sessions
+                                            | on different international cultures where more than 15 students participated. I also co-sponsored the
+                                            | club with many other cultural clubs on campus. Due to the increment in activities, the club budget increased by 100%
+                                            | for the following year. I continued as the student advisor for the club next year where I advised 
+                                            | club leaders on conducting cultural activities on campus.
+                                td 
+                            tr
+                                td 
+                                    .col-head 
+                                        | Ramapo TAS
+                                    .display-option.col-body
+                                        .italic Computer Science Tutor | Aug 2015 - Present
+                                        p.description
+                                            | I tutor Computer Science to mostly freshmen and sophomores. I am a tutor for CS I, CS II, Data Structures,
+                                            | Assembly Language, and any other classes that I have already taken.
+                                td
+                                td 
+                                    .col-head 
+                                        | Computer Club
+                                    .display-option.col-body
+                                        .italic Active Member | Since 2014 
+                                        p.description
+                                            | I am a very active member of Computer and Technology club. I helped several of the club events such as 
+                                            | hackathons, game nights and weekly meetings.
+
+                            
+                
                     
                     
                     
     .gap
-        .col-md-3.col-xs-12
-            h3 GET IN TOUCH 
-        .col-md-6
-            .contacts
-                a(href="http://www.github.com/smaharj1", target="_blank")
-                    img(src="./images/icons/github.png")
-                    span.footerTag Explore my GitHub
-            .contacts
-                a(href="https://www.facebook.com/tsujil", target="_blank")
-                    img(src="./images/icons/facebook.png")
-                    span.footerTag Ping me in Facebook
-            .contacts
-                a(href="https://www.linkedin.com/in/sujilmaharjan", target="_blank")
-                    img(src="./images/icons/linkedin.png")
-                    span.footerTag Link with me
-            .contacts
-                a(href="mailto:smaharj1@ramapo.edu", target="_blank")
-                    img#gmail-logo(src="http://www.socialtalent.co/wp-content/uploads/2015/07/Gmail-Logo.png")
-                    span.footerTag Email me
+        #footer
+            h3.header-color So, what do you think?
+            p.small-font Please feel free to contact me if you have any questions!
+
+            table
+                tbody
+                    tr.contacts(data-href="http://www.github.com/smaharj1")
+                        td 
+                            img(src="./images/icons/github.png")
+                        td.small-font Explore my GitHub
+                    
+                    tr.contacts(data-href="https://www.facebook.com/tsujil")
+                        td 
+                            img(src="./images/icons/facebook.png")
+                        td.small-font Ping me in Facebook
+                    
+                    tr.contacts(data-href="https://www.linkedin.com/in/sujilmaharjan")
+                        td 
+                            img(src="./images/icons/linkedin.png")
+                        td.small-font Link with me
+                    tr.contacts(data-href="mailto:smaharj1@ramapo.edu")
+                        td 
+                            img#gmail-logo(src="http://www.socialtalent.co/wp-content/uploads/2015/07/Gmail-Logo.png")
+                        td.small-font Email me
 
     script(type='text/javascript').
         $('.jarallax').jarallax({
