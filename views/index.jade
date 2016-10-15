@@ -8,22 +8,31 @@ block content
                 li.active(data-target='#myCarousel', data-slide-to='0')
                 li(data-target='#myCarousel', data-slide-to='1')
                 li(data-target='#myCarousel', data-slide-to='2')
-                //li(data-target='#myCarousel', data-slide-to='3')
+                li(data-target='#myCarousel', data-slide-to='3')
+                li(data-target='#myCarousel', data-slide-to='4')
             // Wrapper for slides
             .carousel-inner(role='listbox')
                 .item.active
                     img(src='./images/sliderImages/image1.jpg', alt='Chania')
                     .carousel-caption
-                        h1 Web Development through Bootstrap workshop
+                        p Web Development through Bootstrap workshop
                         img(src="./images/sliderImages/MS_logo.png")
                 .item
-                    img(src='./images/sliderImages/image2.jpg', alt='Chania')
+                    img(src='./images/sliderImages/image2.jpg', alt='MPSlife')
                     .carousel-caption
-                        h1 Poster Presentation at NRHC Conference
+                        p Presenting as an MSP
                 .item
-                    img(src='/images/sliderImages/image3.jpg', alt='Flower')
+                    img(src='/images/sliderImages/image3.jpg', alt='AndroidWear')
                     .carousel-caption
-                        h1 AndroidWear workshop 
+                        p AndroidWear workshop 
+                .item
+                    img(src='/images/sliderImages/image4.jpg', alt='GEIntern')
+                    .carousel-caption
+                        p While interning at GE 
+                .item
+                    img(src='/images/sliderImages/image5.jpg', alt='Skydiving')
+                    .carousel-caption
+                        p Moments after sky-diving 
             // Left and right controls
             a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
                 span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
